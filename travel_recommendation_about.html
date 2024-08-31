@@ -1,36 +1,50 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
-    <!--changing followingCode to my own css file<link rel="stylesheet" href="styles.css">-->
     <link rel="stylesheet" href="travel_recommendation_about.css">
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <div class="nav-title">
+                <h1>Travel Explorer</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="travel_recommendation.html">Home</a></li>
+                <li><a href="travel_recommendation_about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <div class="container">
-        <section class="about">
+        <section class="about" id="about">
             <h1>About Us</h1>
-            <p>We are a team of passionate individuals dedicated to delivering the best products and services to our customers. Our mission is to innovate and lead in our industry, while maintaining a strong commitment to our values and community.</p>
+            <p>We are a team of passionate individuals dedicated to delivering the best travel related products and services to our customers. Our mission is to innovate and lead in our industry, while maintaining a strong commitment to our values and community.</p>
         </section>
 
         <section class="team">
             <h2>Meet Our Team</h2>
             <div class="team-members">
                 <div class="team-member" onclick="showDetails('member1')">
-                    <img src="member1.jpg" alt="Member 1">
-                    <h3>John Doe</h3>
+                    <!--<img src="member1.jpg" alt="Member 1">-->
+                    <h3>Joseph Halstead</h3>
                     <p>CEO</p>
                 </div>
                 <div class="team-member" onclick="showDetails('member2')">
-                    <img src="member2.jpg" alt="Member 2">
-                    <h3>Jane Smith</h3>
+                    <!--<img src="member2.jpg" alt="Member 2">-->
+                    <h3>Rosa Parker</h3>
                     <p>CTO</p>
                 </div>
                 <div class="team-member" onclick="showDetails('member3')">
-                    <img src="member3.jpg" alt="Member 3">
-                    <h3>Emily Johnson</h3>
+                    <!--<img src="member3.jpg" alt="Member 3">-->
+                    <h3>Fay Morehead</h3>
                     <p>COO</p>
                 </div>
             </div>
@@ -39,21 +53,20 @@
         <section class="details" id="details">
             <h2>Team Member Details</h2>
             <div id="member1" class="detail-content">
-                <h3>John Doe</h3>
-                <p>John Doe is the CEO of our company with over 20 years of experience in the industry...</p>
+                <h3>Joseph Halstead</h3>
+                <p>Joseph Halstead is the CEO of our company with over 20 years of experience in the travel industry.</p>
             </div>
             <div id="member2" class="detail-content">
-                <h3>Jane Smith</h3>
-                <p>Jane Smith, our CTO, is a technology visionary with a passion for innovation...</p>
+                <h3>Rosa Parker</h3>
+                <p>Rosa Parker, our CTO, is a technology visionary with a passion for innovation.</p>
             </div>
             <div id="member3" class="detail-content">
-                <h3>Emily Johnson</h3>
-                <p>Emily Johnson oversees our operations with a focus on efficiency and customer satisfaction...</p>
+                <h3>Fay Morehead</h3>
+                <p>Fay Morehead oversees our operations with a focus on efficiency and customer satisfaction.</p>
             </div>
         </section>
     </div>
 
-    <!--changes following code to my own js file. <script src="scripts.js"></script>-->
     <script src="travel_recommendation_about.js"></script>
 </body>
 </html>
