@@ -1,21 +1,51 @@
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Travel Ideas</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Explorer</title>
+    <link rel="stylesheet" href="travel_recommendation.css">
 </head>
-
 <body>
-<nav><h1>Worthy Travel Ideas</h1>
-<ul>
-<li><a href="./travel_recommendation.html" id="home">Home</a></li>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Travel Explorer Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" id="searchBar" placeholder="Search for destinations...">
+            <button id="searchButton">Search</button>
+            <button id="clearButton">Clear</button>
+        </div>
+    </header>
+    
+    <div class="container">
+        <h1>Welcome to Travel Explorer</h1>
+        <p>Your adventure starts here. Discover new destinations and plan your next trip with our personalized recommendations.</p>
+        
+        <div class="recommendation" id="recommendation">
+            <h2 id="locationName"></h2>
+            <img id="locationImage" src="" alt="Location Image">
+            <p id="locationDescription"></p>
+        </div>
+    </div>
 
+    <footer>
+        <div class="social-media">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div>
+        <p>&copy; 2024 Travel Explorer. All rights reserved.</p>
+    </footer>
 
-<li><input type="text" id="destinationInput" placeholder="Enter a destination"></li>
-<li><button id='btnSearch'>Search</button></li>
-
-</ul>
-</nav>
+    <script src="travel_recommendation.js"></script>
 </body>
-
 </html>
