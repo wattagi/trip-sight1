@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="travel_recommendation_contact.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <div class="nav-title">Travel Explorer</div>
+        <ul class="nav-links">
+            <li><a href="travel_recommendation.html">Home</a></li>
+            <li><a href="travel_recommendation_about.html">About Us</a></li>
+            <li><a href="travel_recommendation_contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact Us Form -->
+    <div class="contact-container">
+        <form id="contactForm">
+            <h2>Contact Us</h2>
+            <div class="input-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Social Media Icons -->
+    <div class="social-media">
+        <a href="#" class="icon facebook">Facebook</a>
+        <a href="#" class="icon twitter">Twitter</a>
+        <a href="#" class="icon instagram">Instagram</a>
+    </div>
+
+    <script src="travel_recommendation_contact.js"></script>
+</body>
+</html>
