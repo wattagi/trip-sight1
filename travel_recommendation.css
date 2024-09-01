@@ -6,7 +6,7 @@ body, html {
     padding: 0;
     font-family: Arial, sans-serif;
     color: #333;
-    background: url('background-image.jpg') no-repeat center center fixed;
+    background: url('https://media.gettyimages.com/id/1321504180/photo/aerial-shot-showing-an-aircraft-shadow-flying-over-an-idyllic-beach-scene-barbados.jpg?s=612x612&w=0&k=20&c=fQjVxoO48ZS53rBGcO-FwIy7JYU5N3R3Hti3Dcje4_c=') no-repeat center center fixed;
     background-size: cover;
 }
 
