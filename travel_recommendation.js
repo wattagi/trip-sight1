@@ -1,5 +1,5 @@
 
-
+/*
 // Fetch the JSON data from the file
 fetch('travel_recommendation_api.json')
     .then(response => response.json())
@@ -62,4 +62,57 @@ function displayRecommendation(destination) {
     document.getElementById('locationDescription').textContent = destination.description;
 
     recommendationDiv.style.display = 'block';
+} */
+
+document.getElementById("clearBtn").addEventListener("click", () => {
+    document.getElementById("searchInput").value = "";
+    document.getElementById("results").innerHTML = "";
+});
+
+document.getElementById("searchInput").addEventListener("input", async (e) => {
+    const query = e.target.value.toLowerCase().trim();
+    const response = await fetch('travel_recommendation_api.json');
+    const data = await response.json();
+
+    let results = [];
+
+    if (['beach', 'beaches'].includes(query)) {
+        results = data.beaches;
+    } else if (['temple', 'temples'].includes(query)) {
+        results = data.temples;
+    } else if (['country', 'countries'].includes(query)) {
+        const dropdown = `<select id="countrySelect">
+                            <option value="">Select a country...</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Japan">Japan</option>
+                            <option value="Brazil">Brazil</option>
+                          </select>`;
+        document.getElementById("results").innerHTML = dropdown;
+
+        document.getElementById("countrySelect").addEventListener("change", (e) => {
+            const country = e.target.value;
+            if (country) {
+                const countryData = data.countries.find(c => c.name === country);
+                results = countryData ? countryData.cities : [];
+                displayResults(results);
+            }
+        });
+        return;
+    }
+
+    displayResults(results);
+});
+
+function displayResults(results) {
+    const resultsContainer = document.getElementById("results");
+    resultsContainer.innerHTML = "";
+
+    results.forEach(item => {
+        const resultItem = `<div class="result-item">
+                              <h2>${item.name}</h2>
+                              <img src="${item.imageUrl}" alt="${item.name}">
+                              <p>${item.description}</p>
+                            </div>`;
+        resultsContainer.innerHTML += resultItem;
+    });
 }

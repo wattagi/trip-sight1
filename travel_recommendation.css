@@ -1,47 +1,46 @@
-
-
-/* General styles */
-body, html {
-    margin: 0;
-    padding: 0;
+body {
     font-family: Arial, sans-serif;
-    color: #333;
-    background: url('https://media.gettyimages.com/id/1321504180/photo/aerial-shot-showing-an-aircraft-shadow-flying-over-an-idyllic-beach-scene-barbados.jpg?s=612x612&w=0&k=20&c=fQjVxoO48ZS53rBGcO-FwIy7JYU5N3R3Hti3Dcje4_c=') no-repeat center center fixed;
-    background-size: cover;
-}
-
-/* Header and Navigation */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-.logo img {
-    height: 60px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
     margin: 0;
     padding: 0;
+    background-image: url('https://www.example.com/background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
 }
 
-nav ul li {
-    margin: 0 15px;
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
 }
 
-nav ul li a {
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.title {
+    font-size: 1.5rem;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul li {
+    margin-left: 20px;
+}
+
+ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
 }
 
 .search-container {
@@ -49,70 +48,64 @@ nav ul li a:hover {
     align-items: center;
 }
 
-.search-container input {
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    margin-right: 5px;
+#searchInput {
+    padding: 5px;
+    font-size: 1rem;
 }
 
-.search-container button {
-    padding: 10px 15px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
+#clearBtn {
+    margin-left: 5px;
+    padding: 5px 10px;
+}
+
+.intro {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.intro h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+#bookNowBtn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
     background-color: #ff6f61;
     color: #fff;
+    border: none;
     cursor: pointer;
 }
 
-.search-container button:hover {
-    background-color: #e55b4d;
-}
-
-/* Main Container */
-.container {
-    max-width: 800px;
-    margin: 100px auto;
-    background-color: rgba(255, 255, 255, 0.9);
+.results {
     padding: 20px;
-    border-radius: 10px;
-    text-align: center;
 }
 
-.recommendation {
-    display: none;
-    border-top: 2px solid #ff6f61;
-    padding-top: 20px;
-}
-
-.recommendation img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
+.results .result-item {
     background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.results img {
+    max-width: 100%;
+    border-radius: 10px;
 }
 
 .social-media {
-    margin-bottom: 10px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .social-media a {
     margin: 0 10px;
-}
-
-.social-media img {
-    width: 30px;
-    height: 30px;
+    color: #fff;
+    text-decoration: none;
 }

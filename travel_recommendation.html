@@ -1,5 +1,5 @@
 
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -46,11 +46,57 @@
         <a href="#" class="icon twitter">Twitter</a>
         <a href="#" class="icon instagram">Instagram</a>
 
-            <!--<a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
-            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>-->
+            
         </div>
         <p>&copy; 2024 Travel Explorer. All rights reserved.</p>
+    </footer>
+
+    <script src="travel_recommendation.js"></script>
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Explorer</title>
+    <link rel="stylesheet" href="travel_recommendation.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🌍</div>
+            <div class="title">Travel Explorer</div>
+            <ul>
+                <li><a href="travel_recommendation.html">Home</a></li>
+                <li><a href="travel_recommendation_about.html">About Us</a></li>
+                <li><a href="travel_recommendation_contact.html">Contact Us</a></li>
+                
+            </ul>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button id="clearBtn">Clear</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <h1>Welcome to Travel Explorer</h1>
+        <p>Your gateway to the world's most amazing destinations. Explore beaches, temples, and cities from all over the globe.</p>
+        <button id="bookNowBtn">Book Now</button>
+    </section>
+
+    <section id="results" class="results">
+        <!-- Dynamic content will be displayed here -->
+    </section>
+
+    <footer>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
     </footer>
 
     <script src="travel_recommendation.js"></script>
